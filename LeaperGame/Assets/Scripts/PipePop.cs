@@ -16,7 +16,7 @@ public class PipePop : MonoBehaviour
 
     public void Update()
     {
-        if (Physics.CheckSphere(intake.position, intakeSize))
+        if (Physics.CheckSphere(intake.position, intakeSize, playerMask))
             StartCoroutine(Fire());
     }
 
